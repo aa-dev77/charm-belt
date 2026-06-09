@@ -1,222 +1,148 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>BELT | Corporate Checkout</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link
+      rel="shortcut icon"
+      href="./assets/img/favicon.ico"
+      type="image/x-icon"
+    />
+  </head>
+
+  <body>
+    <header class="header">
+      <div class="container">
+        <nav class="navbar">
+          <a href="index.html" class="logo"
+            ><img src="./assets/img/logo.png" alt=""
+          /></a>
+
+          <ul class="nav-links">
+            <li>
+              <a href="index.html">Home</a>
+            </li>
 
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <li>
+              <a href="configurator.html">Configurator</a>
+            </li>
+
+            <li>
+              <a href="#">Checkout</a>
+            </li>
+          </ul>
+
+          <div class="nav-actions">
+            <!-- <button id="themeToggle" class="theme-btn">◐</button> -->
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <section class="checkout-page">
+      <div class="container">
+        <div class="checkout-grid">
+          <!-- ORDER SUMMARY -->
+
+          <div class="order-summary">
+            <span class="eyebrow"> Order Summary </span>
+
+            <h2>Your Collection</h2>
+
+            <div class="summary-box">
+              <div class="summary-row">
+                <span>Leather</span>
+                <strong>Full Grain</strong>
+              </div>
+
+              <div class="summary-row">
+                <span>Buckle</span>
+                <strong>Champagne Gold</strong>
+              </div>
+
+              <div class="summary-row">
+                <span>Packaging</span>
+                <strong>Luxury Box</strong>
+              </div>
+
+              <div class="summary-row">
+                <span>Quantity</span>
+                <strong>100 Units</strong>
+              </div>
+            </div>
+
+            <div class="summary-total">
+              <span>Estimated Total</span>
+
+              <h3>$4,850</h3>
+            </div>
+          </div>
+
+          <!-- FORM -->
+
+          <div class="checkout-form">
+            <span class="eyebrow"> Corporate Information </span>
+
+            <h2>Finalize Your Order</h2>
+
+            <form>
+              <div class="form-group">
+                <label> Company Name </label>
+
+                <input type="text" placeholder="Enter company name" />
+              </div>
 
-<title>KAMAR | Corporate Checkout</title>
+              <div class="form-group">
+                <label> Contact Person </label>
 
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+                <input type="text" placeholder="Full name" />
+              </div>
 
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+              <div class="form-group">
+                <label> Email Address </label>
 
-<link rel="stylesheet" href="assets/css/style.css">
+                <input type="email" placeholder="company@email.com" />
+              </div>
 
-</head>
+              <div class="form-group">
+                <label> Phone Number </label>
 
-<body>
+                <input type="tel" placeholder="+998" />
+              </div>
 
-<header class="header">
+              <div class="form-group">
+                <label> Delivery Address </label>
 
-<div class="container">
+                <textarea placeholder="Delivery details"></textarea>
+              </div>
 
-<nav class="navbar">
+              <div class="form-group">
+                <label> Additional Notes </label>
 
-<a href="index.html" class="logo">
-KAMAR
-</a>
+                <textarea placeholder="Any special requirements"></textarea>
+              </div>
 
-<ul class="nav-links">
+              <button type="submit" class="btn-primary checkout-btn">
+                Submit Wholesale Request
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
 
-<li>
-<a href="index.html">Home</a>
-</li>
-
-<li>
-<a href="configurator.html">Configurator</a>
-</li>
-
-<li>
-<a href="#">Checkout</a>
-</li>
-
-</ul>
-
-<div class="nav-actions">
-
-<button id="themeToggle" class="theme-btn">
-◐
-</button>
-
-</div>
-
-</nav>
-
-</div>
-
-</header>
-
-<section class="checkout-page">
-
-<div class="container">
-
-<div class="checkout-grid">
-
-<!-- ORDER SUMMARY -->
-
-<div class="order-summary">
-
-<span class="eyebrow">
-Order Summary
-</span>
-
-<h2>
-Your Collection
-</h2>
-
-<div class="summary-box">
-
-<div class="summary-row">
-<span>Leather</span>
-<strong>Full Grain</strong>
-</div>
-
-<div class="summary-row">
-<span>Buckle</span>
-<strong>Champagne Gold</strong>
-</div>
-
-<div class="summary-row">
-<span>Packaging</span>
-<strong>Luxury Box</strong>
-</div>
-
-<div class="summary-row">
-<span>Quantity</span>
-<strong>100 Units</strong>
-</div>
-
-</div>
-
-<div class="summary-total">
-
-<span>Estimated Total</span>
-
-<h3>
-$4,850
-</h3>
-
-</div>
-
-</div>
-
-<!-- FORM -->
-
-<div class="checkout-form">
-
-<span class="eyebrow">
-Corporate Information
-</span>
-
-<h2>
-Finalize
-Your Order
-</h2>
-
-<form>
-
-<div class="form-group">
-
-<label>
-Company Name
-</label>
-
-<input
-type="text"
-placeholder="Enter company name">
-
-</div>
-
-<div class="form-group">
-
-<label>
-Contact Person
-</label>
-
-<input
-type="text"
-placeholder="Full name">
-
-</div>
-
-<div class="form-group">
-
-<label>
-Email Address
-</label>
-
-<input
-type="email"
-placeholder="company@email.com">
-
-</div>
-
-<div class="form-group">
-
-<label>
-Phone Number
-</label>
-
-<input
-type="tel"
-placeholder="+998">
-
-</div>
-
-<div class="form-group">
-
-<label>
-Delivery Address
-</label>
-
-<textarea
-placeholder="Delivery details"></textarea>
-
-</div>
-
-<div class="form-group">
-
-<label>
-Additional Notes
-</label>
-
-<textarea
-placeholder="Any special requirements"></textarea>
-
-</div>
-
-<button
-type="submit"
-class="btn-primary checkout-btn">
-
-Submit Wholesale Request
-
-</button>
-
-</form>
-
-</div>
-
-</div>
-
-</div>
-
-</section>
-
-<script src="assets/js/main.js"></script>
-
-</body>
+    <script src="assets/js/main.js"></script>
+  </body>
 </html>
-
