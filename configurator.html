@@ -1,0 +1,225 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>KAMAR | Configurator</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+
+  <body>
+    <header class="header">
+      <div class="container">
+        <nav class="navbar">
+          <a href="index.html" class="logo"> KAMAR </a>
+
+          <ul class="nav-links">
+            <li>
+              <a href="index.html"> Home </a>
+            </li>
+
+            <li>
+              <a href="#"> Configurator </a>
+            </li>
+
+            <li>
+              <a href="checkout.html"> Checkout </a>
+            </li>
+          </ul>
+
+          <div class="nav-actions">
+            <button id="themeToggle" class="theme-btn">◐</button>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <section class="configurator-page">
+      <div class="container">
+        <div class="config-grid">
+          <!-- LEFT -->
+
+          <div class="config-preview">
+            <div class="sticky-preview">
+              <span class="eyebrow"> Live Preview </span>
+
+              <img src="assets/img/belt.png" class="belt-image" alt="belt" />
+
+              <div class="preview-card">
+                <h3 id="previewLeather">Full Grain Leather</h3>
+
+                <p id="previewBuckle">Champagne Gold Buckle</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- RIGHT -->
+
+          <div class="config-options">
+            <div class="section-title">
+              <span> The Choice </span>
+
+              <h2>Customize Your Belt</h2>
+            </div>
+
+            <!-- LEATHER -->
+
+            <div class="option-group">
+              <h3>Leather Type</h3>
+
+              <div class="option-grid">
+                <button
+                  class="option-btn leather-option active"
+                  data-leather="Full Grain Leather"
+                >
+                  Full Grain
+                </button>
+
+                <button
+                  class="option-btn leather-option"
+                  data-leather="Vegetable Tanned"
+                >
+                  Vegetable
+                </button>
+
+                <button
+                  class="option-btn leather-option"
+                  data-leather="Saffiano Leather"
+                >
+                  Saffiano
+                </button>
+
+                <button
+                  class="option-btn leather-option"
+                  data-leather="Nubuck Leather"
+                >
+                  Nubuck
+                </button>
+              </div>
+            </div>
+
+            <!-- BUCKLE -->
+
+            <div class="option-group">
+              <h3>Buckle Finish</h3>
+
+              <div class="option-grid">
+                <button
+                  class="option-btn buckle-option active"
+                  data-buckle="Champagne Gold Buckle"
+                >
+                  Champagne Gold
+                </button>
+
+                <button
+                  class="option-btn buckle-option"
+                  data-buckle="Black Steel Buckle"
+                >
+                  Black Steel
+                </button>
+
+                <button
+                  class="option-btn buckle-option"
+                  data-buckle="Silver Buckle"
+                >
+                  Silver
+                </button>
+
+                <button
+                  class="option-btn buckle-option"
+                  data-buckle="Matte Bronze Buckle"
+                >
+                  Bronze
+                </button>
+              </div>
+            </div>
+
+            <!-- EMBOSSING -->
+
+            <div class="option-group">
+              <h3>Corporate Logo</h3>
+
+              <input
+                type="text"
+                placeholder="Enter Company Name"
+                class="config-input"
+              />
+            </div>
+
+            <!-- PACKAGING -->
+
+            <div class="option-group">
+              <h3>Packaging Style</h3>
+
+              <select class="config-select">
+                <option>Luxury Black Box</option>
+
+                <option>Premium Gift Box</option>
+
+                <option>Corporate Packaging</option>
+
+                <option>Custom Packaging</option>
+              </select>
+            </div>
+
+            <!-- QUANTITY -->
+
+            <div class="option-group">
+              <h3>Quantity</h3>
+
+              <input type="number" value="100" min="50" class="config-input" />
+            </div>
+
+            <a href="checkout.html" class="btn-primary">
+              Continue To Checkout
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="assets/js/main.js"></script>
+
+    <script>
+      const leatherOptions = document.querySelectorAll(".leather-option");
+
+      const buckleOptions = document.querySelectorAll(".buckle-option");
+
+      const previewLeather = document.getElementById("previewLeather");
+
+      const previewBuckle = document.getElementById("previewBuckle");
+
+      leatherOptions.forEach((btn) => {
+        btn.addEventListener("click", () => {
+          leatherOptions.forEach((b) => b.classList.remove("active"));
+
+          btn.classList.add("active");
+
+          previewLeather.textContent = btn.dataset.leather;
+        });
+      });
+
+      buckleOptions.forEach((btn) => {
+        btn.addEventListener("click", () => {
+          buckleOptions.forEach((b) => b.classList.remove("active"));
+
+          btn.classList.add("active");
+
+          previewBuckle.textContent = btn.dataset.buckle;
+        });
+      });
+    </script>
+  </body>
+</html>
+
