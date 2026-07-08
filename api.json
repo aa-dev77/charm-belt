@@ -1,0 +1,12 @@
+{
+  "URL_CLIENT": "https://www.charmbelt.uz/client.apk",
+  "URL_GAME_FILES": "https://www.dropbox.com/scl/fi/8s1jdlig2rlr80q3172cb/cache.zip?rlkey=o00n34htxwigxdxs7os1i7eak&st=ce5lwo19&dl=1",
+  "URL_GAME_FILES_UPD": "none",
+  "URL_VK": "https://vk.com/statusrpvk",
+  "URL_DISCORD": "https://discord.gg/9t8wgbAzM8",
+  "URL_YOUTUBE": "https://youtube.com/@statusroleplay",
+  "URL_FORUM": "https://forum.turan-rp.uz/",
+  "URL_DONATE": "https://turan-rp.uz/donate/",
+  "clientVersionCode": 11,
+  "gameFilesVersionCode": 1
+}
