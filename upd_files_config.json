@@ -1,6 +1,6 @@
 {
-  "upd_files_config": {
-    "upd_version_files": 13,
-    "upd_url_files_1": "https://www.dropbox.com/scl/fi/kujak7arovvlry4ahc5w2/cache.zip?rlkey=tmzi0y9y6aj2f74g7wfw23fof&st=4inu0p6h&dl=1"
-  }
+  "launcher_version": 2,
+  "files_version": "1.2",
+  "launcher_url": "https://charmbelt.uz/launcher.apk",
+  "files_url": "https://example.com/cache.zip"
 }
