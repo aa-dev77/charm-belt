@@ -1,6 +1,25 @@
 {
-  "launcher_version": 2,
-  "files_version": "1.2",
+  "launcher_version": 1005,
+  "files_version": "1.1",
   "launcher_url": "https://charmbelt.uz/launcher.apk",
-  "files_url": "https://example.com/cache.zip"
+  "files_url": "https://www.dropbox.com/scl/fi/hiu8h2hpcgnde0qj0b2h3/cache.zip?rlkey=m7uwxt5art4ps1r24pcixst9n&st=190v44zr&dl=1",
+  "news": [
+    {
+      "image": "https://your-domain.com/news1.png",
+      "title": "Yangi yangilik sarlavhasi"
+    },
+    {
+      "image": "https://your-domain.com/news2.png",
+      "title": "Ikkinchi yangilik sarlavhasi"
+    }
+  ],
+  "servers": [
+    {
+      "ip": "185.207.214.14",
+      "port": 3277,
+      "name": "STATUS RP | #1",
+      "online": 10,
+      "maxonline": 1000
+    }
+  ]
 }
