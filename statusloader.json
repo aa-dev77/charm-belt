@@ -15,8 +15,8 @@
   ],
   "servers": [
     {
-      "ip": "185.207.214.14",
-      "port": 3277,
+      "ip": "188.127.241.8",
+      "port": 1173,
       "name": "STATUS RP | #1",
       "online": 10,
       "maxonline": 1000
